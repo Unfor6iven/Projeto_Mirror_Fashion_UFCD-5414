@@ -1,8 +1,0 @@
-
-
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssreset-context-min.css">
-
-<div>
-	<div id="left-column" class="yui3-cssreset"><h1>Lorem Ipsum</h1></div>
-	<div id="right-column"><h1>Lorem Ipsum</h1></div>
-</div>

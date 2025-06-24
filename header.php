@@ -7,8 +7,6 @@
 
 	<link rel="stylesheet" href="CSS/CSS_ Reset.css">
 	<link rel="stylesheet" href="CSS/Styles.css">
-	<!-- <link rel="stylesheet" href="CSS/styles_mobile.css" media="(max-width: 939px)"> -->
-
 
 	<?php print @$cabeçalho_css; ?>
 
