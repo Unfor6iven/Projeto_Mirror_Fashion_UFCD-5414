@@ -1,5 +1,5 @@
     <?php
-    $cabeçalho_title = 'Sobre Mirror Fashion';
+    $header_title = 'Sobre Mirror Fashion';
     include 'header.php';
     ?>
 

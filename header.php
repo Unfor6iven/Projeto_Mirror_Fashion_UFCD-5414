@@ -8,9 +8,9 @@
 	<link rel="stylesheet" href="CSS/CSS_ Reset.css">
 	<link rel="stylesheet" href="CSS/Styles.css">
 
-	<?php print @$cabeçalho_css; ?>
+	<?php print @$header_css; ?>
 
-	<title><?php print $cabeçalho_title; ?></title>
+	<title><?php print $header_title; ?></title>
 </head>
 
 <body>
