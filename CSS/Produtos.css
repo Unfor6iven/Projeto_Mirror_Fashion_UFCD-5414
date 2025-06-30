@@ -88,8 +88,8 @@ label[for="azul"]::after {
     left: 60px;
 }
 
-label[for="vermelho"]::after {
-    background-color: #f66; /* Vermelho */
+label[for="rosa"]::after {
+    background-color: #f66; /* Rosa */
     left: 120px;
 }
 
