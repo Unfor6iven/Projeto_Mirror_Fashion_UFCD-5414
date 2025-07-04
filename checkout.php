@@ -27,8 +27,12 @@
             color: yellow;
         }
 
+        .navbar-brand {
+            padding: 10px 15px;
+        }
+
         .navbar-brand img {
-            height: 30px;
+            height: 40px;
         }
     </style>
 </head>
@@ -95,7 +99,7 @@
 
                     <div class="panel-body">
 
-                        <img src="IMG/produtos/foto<?= $_POST['id'] ?>-<?= $_POST['cor'] ?>.png" alt="Foto1" class="img-thumbnail img-responsive hidden-xs">
+                        <img src="IMG/produtos/foto<?= $_POST['id'] ?>-<?= $_POST['cor'] ?>.png" alt="Foto" class="img-thumbnail img-responsive hidden-xs">
 
                         <dl>
                             <dt>Produto: </dt>
@@ -199,6 +203,7 @@
 
     <script src="JS/jquery.js"></script>
     <script src="JS/bootstrap.js"></script>
+    <script src="JS/converteMoeda.js"></script>
 
 </body>
 
