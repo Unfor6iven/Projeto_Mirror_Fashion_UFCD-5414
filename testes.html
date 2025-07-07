@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        #main {
+            display: flex;
+            gap: 20px;
+        }
+
+        .painel {
+            width: 200px;
+            height: 200px;
+        }
+
+        #novidades {
+            background-color: blue;
+        }
+
+        #mais-vendidos {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>Exemplos JS</h2>
+
+    <p id="titulo">
+        Teste
+    </p>
+
+    <button id="mudar-fundo"> Mudar a Cor de fundo do Painel Novidades</button>
+
+    <section id="main">
+        <div class="painel" id="novidades"></div>
+        <div class="painel" id="mais-vendidos"></div>
+    </section>
+
+    <h1>Blocos Condicionais</h1>
+
+    <p>
+        E -> &&<br>
+        OU -> ||<br>
+        <br>
+    </p>
+
+    <h2>Funções</h2>
+
+    <p>
+        // Estrutura de uma função<br>
+        <br>
+        function nomeDaFuncao(parâmetros) {<br>
+        // corpo da função<br>
+        }<br>
+    </p>
+
+    <p>
+        smallCamelCase = inicia com letra minuscula e todas as outras palavras começam com maiusculas
+    </p>
+
+    <h2>// Function expression vs function declaration</h2>
+
+    <p>
+        <br>
+        somaDoisNumeros(10, 20);<br>
+
+        function somaDoisNumeros(num1, num2) {<br>
+        return(num1 + num2);<br>
+        }<br>
+        <br>
+        somaDoisNumeros(10, 20);<br>
+        var somaDoisNumeros = function(num1, num2) {<br>
+        return(num1 + num2);<br>
+        };<br>
+        <br>
+        // hoisting <br>
+        <br>
+    </p>
+
+    <h2>Array</h2>
+
+    <p>
+        var palavras = ["IEFP", "Curso"];<br>
+        <br>
+        palavras.push("Profissional");<br>
+        palavras[9] = "Profissional"; // o que não existe fica undefined<br>
+        <br>
+        var variosTipos = ["IEFP", 10, [1,2]];<br>
+        <br>
+        console.log(variosTipos[1]);<br>
+    </p>
+
+    <h2>Blocos de Repetição</h2>
+
+    <p>
+        for<br>
+        while<br>
+        do...while<br>
+    </p>
+
+    <h2>Funções Temporais</h2>
+
+    <p>
+        setTimeout(função, timeout - milisegundos)<br>
+        setTimeout(minhaFuncao, 1000);<br>
+        setInterval(minhaFuncao, 1000);<br>
+        <br>
+        var timer = setInterval(minhaFuncao,1000);<br>
+    </p>
+
+
+    <!-- <script> // Mudar fundo
+        document.getElementById("mudar-fundo").addEventListener("click", function() {
+            document.getElementById("novidades").style.backgroundColor = "red";
+        });
+    </script> -->
+
+    <script>
+        const btn = document.getElementById("mudar-fundo");
+        const painel = document.getElementById("novidades");
+
+        btn.addEventListener("click", function () {
+            const corAtual = painel.style.backgroundColor;
+
+            if (corAtual === "red") {
+                painel.style.backgroundColor = "blue";
+                btn.textContent = "Mudar cor para vermelho";
+            } else {
+                painel.style.backgroundColor = "red";
+                btn.textContent = "Mudar cor para azul";
+            }
+        });
+
+    </script>
+
+    <!-- <script src="JS/testes.js"></script> -->
+
+</body>
+
+</html>

@@ -109,8 +109,25 @@
                             <dt>Tamanho: </dt>
                             <dd><?= $_POST['tamanho'] ?></dd>
                             <dt>Preço: </dt>
-                            <dd><?= $_POST['preco'] ?></dd>
+                            <dd id="preco"><?= $_POST['preco'] ?></dd>
                         </dl>
+                        
+                        <!-- Quantidade e Total -->
+
+                        <div class="form-group">
+                            <label for="qt">Quantidade: </label>
+                            <input type="number" name="qt" id="qt" class="form-control" min="1" max="99" value="1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qt">Total: </label>
+                            <output for="qt valor" id="total" class="form-control">
+                                <?= $_POST['preco'] ?>
+                            </output>
+                        </div>
+                        
+                        <!-- fim Quantidade e Total -->
+                        
                     </div> <!-- fim .panel-body -->
                 </div> <!-- fim .panel -->
             </div>
@@ -203,7 +220,11 @@
 
     <script src="JS/jquery.js"></script>
     <script src="JS/bootstrap.js"></script>
+    
     <script src="JS/converteMoeda.js"></script>
+    <script src="JS/testaConversao.js"></script>
+
+    <script src="JS/total.js"></script>
 
 </body>
 
