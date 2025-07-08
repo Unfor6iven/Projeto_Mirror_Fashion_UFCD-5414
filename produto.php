@@ -1,15 +1,15 @@
     <?php
 
-        $header_css = '<link rel="stylesheet" href="CSS/Produtos.css">';
-		$header_title = 'Produto da Mirror Fashion';
-        include 'header.php'; 
+    $header_css = '<link rel="stylesheet" href="CSS/Produtos.css">';
+    $header_title = 'Produto da Mirror Fashion';
+    include 'header.php';
 
-	?>
+    ?>
 
     <!-- Content -->
-     <div class="produto-back">
-         <div class="container">
-             <div class="produto">
+    <div class="produto-back">
+        <div class="container">
+            <div class="produto">
                 <h2>Fuzzy Cardigan</h2>
                 <p>por apenas R$ 129,00</p>
                 <form action="checkout.php" method="post">
@@ -39,14 +39,17 @@
                     <fieldset class="tamanhos">
                         <legend>Escolha o tamanho: </legend>
                         <input type="range" name="tamanho" id="tamanho" min="36" max="46" value="42" step="2">
+
+                        <output for="tamanho" name="valortamanho">42</output>
+
                         <label for="tamanho"></label>
                     </fieldset>
 
                     <input type="submit" value="Comprar" class="comprar">
                 </form>
-             </div>
-             
-             <div class="detalhes">
+            </div>
+
+            <div class="detalhes">
                 <h3>Detalhes do Produto</h3>
                 <p>
                     Esse é o melhor casaco de Cardigã que você já viu. Excelente material italiano com estampa desenhada pelos artesãos da comunidade de Krotor nas ilhas gregas. Compre já e receba hoje mesmo pela nossa entrega a jato.
@@ -77,8 +80,11 @@
                         </tr>
                     </tbody>
                 </table>
-             </div>
-         </div>
-     </div>
-     
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/jquery.js"></script>
+    <script src="JS/produto.js"></script>
+
     <?php include 'footer.php'; ?>

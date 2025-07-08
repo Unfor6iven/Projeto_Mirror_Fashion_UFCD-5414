@@ -11,6 +11,7 @@
 	<?php print @$header_css; ?>
 
 	<title><?php print $header_title; ?></title>
+
 </head>
 
 <body>

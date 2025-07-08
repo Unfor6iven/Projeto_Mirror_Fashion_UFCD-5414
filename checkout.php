@@ -154,7 +154,7 @@
                                 <label for="nif">NIF</label>
                                 <div class="input-group">
                                     <span class="input-group-addon">#</span>
-                                    <input type="text" class="form-control" name="nif" id="nif" placeholder="000 000 000" pattern="[0-9]{9}" required>
+                                    <input type="text" class="form-control" data-mask="999 999 999" name="nif" id="nif" placeholder="000 000 000" required>
                                 </div>
                             </div>
                             <div class="checkbox">
@@ -179,12 +179,12 @@
 
                             <div class="form-group">
                                 <label for="cardnum">Número do Cartão</label>
-                                <input type="text" class="form-control" name="cardnum" id="cardnum" placeholder="0000 0000 0000 0000" pattern="[0-9]{12}">
+                                <input type="text" class="form-control" data-mask="9999 9999 9999 9999" name="cardnum" id="cardnum" placeholder="0000 0000 0000 0000">
                             </div>
 
                             <div class="form-group">
                                 <label for="cardcvv">CVV</label>
-                                <input type="text" class="form-control" name="cardcvv" id="cardcvv" placeholder="CVV" pattern="[0-9]{3}">
+                                <input type="text" class="form-control" data-mask="999" name="cardcvv" id="cardcvv" placeholder="CVV">
                             </div>
 
                             <div class="form-group">
@@ -220,6 +220,7 @@
 
     <script src="JS/jquery.js"></script>
     <script src="JS/bootstrap.js"></script>
+    <script src="JS/inputmask-plugin.js"></script>
     
     <script src="JS/converteMoeda.js"></script>
     <script src="JS/testaConversao.js"></script>

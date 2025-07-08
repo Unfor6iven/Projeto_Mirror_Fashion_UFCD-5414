@@ -116,7 +116,62 @@
     					</a>
     				</li>
 
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura1.png" alt="Produto#1">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura2.png" alt="Produto#2">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura3.png" alt="Produto#3">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura4.png" alt="Produto#4">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura5.png" alt="Produto#5">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura6.png" alt="Produto#6">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
     			</ol>
+				<button type="button">Mostrar Mais</button>
     		</section>
 
 
@@ -184,7 +239,62 @@
     					</a>
     				</li>
 
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura7.png" alt="Produto#7">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura8.png" alt="Produto#8">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura9.png" alt="Produto#9">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura10.png" alt="Produto#10">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura11.png" alt="Produto#11">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
+    				<li>
+    					<a href="produto.php">
+    						<figure>
+    							<img src="IMG/produtos/miniatura12.png" alt="Produto#12">
+    							<figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+    						</figure>
+    					</a>
+    				</li>
+
     			</ol>
+				<button type="button">Mostrar Mais</button>
     		</section>
 
     	</div>
@@ -192,35 +302,8 @@
     </section>
     <!-- Fim do Container de Novidades/Mais Vendidos -->
 
-    <script>		// Rotação do Banner com setInterval			// Botão de Pause e Play
-    	var banners = ["IMG/destaque-home.png", "IMG/destaque-home-2.png"];
-    	var bannerAtual = 0;
 
-		var idTimer = null;											// 07/07/2025
-		var statusTimer = false;									// 07/07/2025
-
-    	function trocaBanner() {
-    		bannerAtual = (bannerAtual + 1) % 2;
-    		document.querySelector(".destaques img").src = banners[bannerAtual];
-    	}
-
-    	idTimer = setInterval(trocaBanner, 4000); 					// 07/07/2025
-
-		var statusTimer = true										// 07/07/2025
-
-		const btn = document.querySelector("#play-pause");			// 07/07/2025
-
-		btn.addEventListener("click", function() {					// 07/07/2025
-			if(statusTimer) {
-				clearInterval(idTimer);
-				statusTimer = false;
-				btn.innerHTML = "&#9654;";
-			} else {
-				idTimer = setInterval(trocaBanner, 4000);
-				statusTimer = true;
-				btn.innerHTML = "&#9208;";
-			}
-		});
-    </script>
+	<script src="JS/jquery.js"></script>
+    <script src="JS/home.js"></script>
 
     <?php include 'footer.php'; ?>

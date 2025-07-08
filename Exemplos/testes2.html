@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Document</title>
+
+    <style>
+        .cabecalho {
+            background-color: #333;
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="cabecalho"></div>
+
+    <script>
+        // Javascript "PURO"
+        // var cabecalho = document.getElementById("cabecalho");
+
+        // if (cabecalho.attachEvent) {
+        //     cabecalho.attachEvent("onclick", function (event) {
+        //         alert("Você clicou no cabeçalho, utilizador do IE!");
+        //     });
+        // }
+        // else if (cabecalho.addEventListener) {
+        //     cabecalho.addEventListener("click", function (event) {
+        //         alert("Você clicou no cabeçalho!");
+        //     }, false);
+        // }
+
+        // JQuery
+        $("#cabecalho").click(function (event) {
+            alert("Você clicou no cabeçalho!");
+        });
+
+        // $("#cabecalho").css({"margin-top": "20px", "color": "#333"}).addClass("selecionado");
+
+        // $("tbody td").hide();
+
+        // // colocar o fundo do formulário com o id "form" a preto
+        // $("#form").css("background", "black");
+
+        // // mudar o texto de todos os parágrafos
+        // $("p").text("Olá :D");
+
+        // // o primeiro elemento <p> filho de uma <div>
+        // $("div > p:first");
+
+        // // todos os input invisíveis
+        // $("input:hidden");
+
+        // // todos os button
+        // $("input[type=button]");
+
+        // var pessoas = ["João", "José", "Maria", "António"];
+
+        // $.each(pessoas), function(i, e) {
+        //     alert(e);
+        // }
+
+    </script>
+
+</body>
+
+</html>
