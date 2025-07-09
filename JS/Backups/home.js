@@ -1,6 +1,6 @@
 // Rotação do Banner com setInterval	    &&  	// Botão de Pause e Play
 
-var banners = ["IMG/destaque-home.png", "IMG/destaque-home-2.png"];
+var banners = ["IMG/destaque-home.jpg", "IMG/destaque-home-2.jpg"];
 var bannerAtual = 0;
 
 var idTimer = null;											// 07/07/2025

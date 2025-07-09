@@ -42,7 +42,7 @@
     	<!-- Fim .menu-departamentos -->
 
     	<div class="index-banner">
-    		<img src="IMG/destaque-home.png" alt="Promo: Big City Night">
+    		<img src="IMG/destaque-home.jpg" alt="Promo: Big City Night">
     		<button id="play-pause">&#9208;</button>
     	</div>
 
@@ -303,7 +303,7 @@
     <!-- Fim do Container de Novidades/Mais Vendidos -->
 
 
-	<script src="JS/jquery.js"></script>
-    <script src="JS/home.js"></script>
+	<script src="JS/jquery.min.js"></script>
+    <script src="JS/index.min.js"></script>
 
     <?php include 'footer.php'; ?>

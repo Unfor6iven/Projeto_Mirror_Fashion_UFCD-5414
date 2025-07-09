@@ -5,8 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="CSS/CSS_ Reset.css">
-	<link rel="stylesheet" href="CSS/Styles.css">
+	<link rel="stylesheet" href="CSS/Styles.min.css">
 
 	<?php print @$header_css; ?>
 

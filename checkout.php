@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="CSS/bootstrap-flatly.css">
+    <link rel="stylesheet" href="CSS/bootstrap-flatly.min.css">
 
 
     <title>Checkout Mirror Fashion</title>
@@ -218,14 +218,11 @@
         }
     </script>
 
-    <script src="JS/jquery.js"></script>
-    <script src="JS/bootstrap.js"></script>
-    <script src="JS/inputmask-plugin.js"></script>
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/inputmask-plugin.min.js"></script>
     
-    <script src="JS/converteMoeda.js"></script>
-    <script src="JS/testaConversao.js"></script>
-
-    <script src="JS/total.js"></script>
+    <script src="JS/checkout.min.js"></script>
 
 </body>
 

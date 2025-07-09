@@ -1,6 +1,6 @@
     <?php
 
-    $header_css = '<link rel="stylesheet" href="CSS/Produtos.css">';
+    $header_css = '<link rel="stylesheet" href="CSS/Produtos.min.css">';
     $header_title = 'Produto da Mirror Fashion';
     include 'header.php';
 
@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <script src="JS/jquery.js"></script>
-    <script src="JS/produto.js"></script>
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/produto.min.js"></script>
 
     <?php include 'footer.php'; ?>
