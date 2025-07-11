@@ -7,8 +7,14 @@
 
     <link rel="stylesheet" href="CSS/bootstrap-flatly.min.css">
 
+    <?php
+        require_once("connect.php");
 
-    <title>Checkout Mirror Fashion</title>
+        $dados = mysqli_query($con, "SELECT * FROM produtos WHERE id = $_POST[id]");
+        $produto = mysqli_fetch_array($dados);
+    ?>
+
+    <title><?= $produto["nome"] ?> - MF Checkout</title>
 
     <style>
         body {
@@ -103,15 +109,15 @@
 
                         <dl>
                             <dt>Produto: </dt>
-                            <dd><?= $_POST['nome'] ?></dd>
+                            <dd><?= $produto['nome'] ?></dd>
                             <dt>Cor: </dt>
                             <dd><?= $_POST['cor'] ?></dd>
                             <dt>Tamanho: </dt>
                             <dd><?= $_POST['tamanho'] ?></dd>
                             <dt>Preço: </dt>
-                            <dd id="preco"><?= $_POST['preco'] ?></dd>
+                            <dd id="preco"><?= $produto['preco'] ?></dd>
                         </dl>
-                        
+
                         <!-- Quantidade e Total -->
 
                         <div class="form-group">
@@ -122,12 +128,12 @@
                         <div class="form-group">
                             <label for="qt">Total: </label>
                             <output for="qt valor" id="total" class="form-control">
-                                <?= $_POST['preco'] ?>
+                                <?= $produto['preco'] ?>
                             </output>
                         </div>
-                        
+
                         <!-- fim Quantidade e Total -->
-                        
+
                     </div> <!-- fim .panel-body -->
                 </div> <!-- fim .panel -->
             </div>
@@ -221,7 +227,7 @@
     <script src="JS/jquery.min.js"></script>
     <script src="JS/bootstrap.min.js"></script>
     <script src="JS/inputmask-plugin.min.js"></script>
-    
+
     <script src="JS/checkout.min.js"></script>
 
 </body>
